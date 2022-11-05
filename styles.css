@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   /* height: 100vh; */
   font-family: 'Lexend Deca', sans-serif;
@@ -46,6 +50,7 @@ body {
 .card__cars p {
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5rem;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -59,6 +64,7 @@ body {
   text-align: center;
   border-radius: 2rem;
   border-style: none;
+  border: 2px solid transparent;
   background-color: hsl(0, 0%, 95%);
 }
 
@@ -66,42 +72,43 @@ body {
   cursor: pointer;
   color:hsl(0, 0%, 95%);
   border: 2px solid hsl(0, 0%, 95%);
+  /* border-style: inset; */
 }
 
-.card__button__sedans {
+.card_button_sedans {
   color:hsl(31, 77%, 52%);
 }
 
-.card__button__sedans:hover {
+.card_button_sedans:hover {
   background-color: hsl(31, 77%, 52%);
 }
 
-.card__button__suvs {
+.card_button_suvs {
   color:hsl(184, 100%, 22%);
 }
 
-.card__button__suvs:hover {
+.card_button_suvs:hover {
   background-color: hsl(184, 100%, 22%);
 }
 
-.card__button__luxury {
+.card_button_luxury {
   color:hsl(179, 100%, 13%);
 }
 
-.card__button__luxury:hover {
+.card_button_luxury:hover {
   background-color: hsl(179, 100%, 13%);
 }
 
-.card__sedans {
+.card_sedans {
   border-radius: 0.5rem 0.5rem 0 0;
   background-color: hsl(31, 77%, 52%);
 }
 
-.card__suvs {
+.card_suvs {
   background-color: hsl(184, 100%, 22%);
 }
 
-.card__luxury {
+.card_luxury {
   border-radius: 0 0 0.5rem 0.5rem;
   background-color: hsl(179, 100%, 13%);
 }
@@ -137,12 +144,12 @@ body {
     color: hsla(0, 0%, 100%, 0.75);
   }
 
-  .card__sedans {
+  .card_sedans {
     border-radius: 0.5rem 0 0 0.5rem;
     background-color: hsl(31, 77%, 52%);
   }
 
-  .card__luxury {
+  .card_luxury {
     border-radius: 0 0.5rem 0.5rem 0;
     background-color: hsl(179, 100%, 13%);
   }
